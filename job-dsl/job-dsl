@@ -1,4 +1,4 @@
-def gitUrl = "https://github.com/kahootali/jenkins-labs.git"
+def gitUrl = "https://github.com/mohammedshoaibdeveloper/-jenkins-labs-.git"
 job('test-job') {
 	description "My First DSL Job with GitHub Integration"
 	scm {
@@ -6,7 +6,7 @@ job('test-job') {
 			remote {
 				url(gitUrl)
 			}
-			branch('*/main')
+			branch('*/master')
 		}
 	} 
 	triggers {
